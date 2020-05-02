@@ -6,7 +6,7 @@ _toRemove = [];
   _dir = (getDir _cbr - _dir);
   if(_dir > 360) then {_dir = _dir - 360;};
   _angleTo = abs (((_dir) + 360) - ((_cbr getDir _x) + 360));
-  _inRange = _x distance _cbr < 2000;
+  _inRange = _x distance _cbr < 4000;
   if(_angleTo < 23 && _inRange && !(terrainIntersectASL [getPosASL _x, (getPosASL _cbr) vectorAdd [0,0,3]])) then {
     _toRemove pushBack _x;
     _impact = [_x] call itc_land_cobra_fnc_calcImpact;

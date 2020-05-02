@@ -7,8 +7,8 @@
     if(_direction > 360) then {_direction = _direction - 360;};
     private _position = getPos _x;
     _map drawIcon ["iconExplosiveGPDirectional",[0,0,1,1],_position, 24, 24, 0, "",0,0.05,"TahomaB","right"];
-    _map drawLine [_x, (_position getPos [10000, _direction + 22]),[0,0,1,1]];
-    _map drawLine [_x, (_position getPos [10000, _direction - 22]),[0,0,1,1]];
+    _map drawLine [_x, (_position getPos [4000, _direction + 22]),[0,0,1,1]];
+    _map drawLine [_x, (_position getPos [4000, _direction - 22]),[0,0,1,1]];
   }forEach (missionNameSpace getVariable ["itc_land_cobras",[]]);
 
   {
