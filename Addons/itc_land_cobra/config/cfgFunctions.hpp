@@ -41,6 +41,9 @@ class CfgFunctions {
       class getCobraData {
         file = "itc_land_cobra\functions\getCobraData.sqf";
       };
+      class placed {
+        file = "itc_land_cobra\functions\placed.sqf";
+      };
     };
   };
 };

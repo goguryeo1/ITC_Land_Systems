@@ -93,4 +93,14 @@ class CfgVehicles {
       soundDuration = 2;
     };
   };
+  
+  class EventHandlers;
+  class ModuleOrdnance_F;
+  class ModuleOrdnanceMortar_F : ModuleOrdnance_F {
+	  class EventHandlers : EventHandlers {
+		  class test {
+			  init = "[(_this select 0)] call itc_land_cobra_fnc_placed";
+		  };
+	  };
+  };
 };
